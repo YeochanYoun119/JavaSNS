@@ -1,0 +1,48 @@
+Test Log:
+/////////////////////////////////////////////////////////////////////////////////////////
+KEY:
++ means it seems good
+- means some flaw, read comment
+* not sure if it is good
+
+All Boxes
+	1) empty input				+
+
+Load File:	
+	1) valid format 			+
+	2) invalid format 			+
+Enter User:
+	1) valid user				+
+	2) repeat user				+
+	3) remove invalid user 		+
+	4) remove valid user		+
+Enter Friendship
+	1) two existing users		+
+	2) one exists, one doesn't  +
+	3) two don't exist			+
+Remove Friendship
+	1) one invalid input		+
+	2) two invalid inputs		+
+	3) two valid inputs			+
+Set Central User
+	1) valid input				+
+	2) invalid input			+
+Shortest Path
+	1) connected users			+
+	2) null user(s)				+
+	3) unconnected users			+does not put out error message (should be fixed?) FIXED
+Clear Network
+	1) full network 			+
+	2) empty network			* 	says successfully cleared, maybe should be error?
+Export Network
+	1) empty network			-	the export file has "s Kyle" in it for some reason FIXED
+	2) random network			-	begins with "s Kyle" also ? FIXED
+Exit Network Visualizer
+	1) exit without saving		+
+	2) exit and save			+
+Clicking people
+	1) click friend				+
+	2) click central user		*	does nothing -- that is good right? YES
+List View
+	1) general user				+
+	NOTE: seems to update appropriately, I had no specific testing in mind
